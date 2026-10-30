@@ -6,6 +6,7 @@
 
 ## 2026-10-30
 
+- **Codex（GPT-6；GPT-6-astra 子代理）**：完成实验室角色卡“从角色库引用”弹窗搜索功能，支持名称、说明、标签及正负提示词匹配，保留加载／错误／真实空库状态并新增无匹配提示；完成组件回归和四语文案定向测试。
 - **DeepSeek Harness（deepseek-flash）**：把 `PROJECT_AGENT.md` 加入 prompt-library 与 nai-roll 两个工作流的触发路径，单独修改助手运行规则也会跑预算与助手回归；版本递增至 1.147.2。
 
 - **DeepSeek Harness（deepseek-flash）**：修复 @ 引用功能触发的 CI 预算回归——把「@ 引用角色即已确认、不再搜索同名角色」规则从 `PROJECT_AGENT.md`（系统提示）移到运行时引用上下文，32768 Token 小窗口模型恢复可用；本地复跑 prompt-library 与 nai-roll 两个 workflow 的全部步骤通过（助手回归 131 项、关联／存储／面板 121 项、Roll／实验室 557 项、产物一致性 7 项），版本递增至 1.147.1。
